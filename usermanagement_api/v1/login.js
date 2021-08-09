@@ -25,7 +25,7 @@ module.exports = () => {
             const token = jwt.sign(loggedinUser,key);
             res.header("Authorization",token);
             
-            //r["Authorization"] = token;
+            result.Authorization = token;
             console.log(jwt.verify(token,key));
             res.status(200).json(result);
 

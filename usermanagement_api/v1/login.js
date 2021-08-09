@@ -26,10 +26,9 @@ module.exports = () => {
             res.header("Authorization",token);
             
             result.Authorization = token;
-            console.log(jwt.verify(token,key));
             res.status(200).json(result);
 
-            console.log("Result is 200");
+            
         }
     }
     

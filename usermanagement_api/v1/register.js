@@ -30,7 +30,7 @@ module.exports = () => {
             }
             else{
                 res.status(200).json(result);
-               console.log("Result is 200");
+               
             }
 
 
